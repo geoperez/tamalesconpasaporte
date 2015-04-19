@@ -1,4 +1,4 @@
-white-fogg-ghost-theme
+Tamales Con Pasaporte (http://www.tamalesconpasaporte.com)
 ======================
 
-This theme has change a lot!
+Our template based on white-fogg-ghost-theme.
