@@ -1,0 +1,41 @@
+{{!< default}}
+    {{> header}}
+
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 posts">
+					{{#post}}
+                    <article class="{{post_class}}">
+                        <div class="post-header">
+                            <div class="post-title">
+                                <h2>{{{title}}}</h2>
+                            </div>
+                            <hr class="divider" />
+                        </div>
+                        <div class="post-content">
+                            <p>
+                                {{{content}}}
+                            </p>
+                        </div>
+                    </article>
+                    {{/post}}
+                    <div style="text-align: center" class="hidden-sm hidden-xs">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <!-- Tamal -->
+                        <div style="text-align: center">
+                            <ins class="adsbygoogle"
+                                 style="display:inline-block;width:728px;height:90px"
+                                 data-ad-client="ca-pub-7312968410890852"
+                                 data-ad-slot="2217745225"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{> footer}}
