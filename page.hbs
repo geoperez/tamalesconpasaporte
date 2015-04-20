@@ -17,22 +17,43 @@
                             <p>
                                 {{{content}}}
                             </p>
+
+                            <div class="post-meta">
+                                <div class="share-icons">
+                                    Compartir: <i class="fa fa-share"></i>
+                                    <ul class="list-inline list-share-icons">
+                                        <li>
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                                               onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-facebook fb-tooltip"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
+                                               onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter tw-tooltip"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://plus.google.com/share?url={{url absolute="true"}}"
+                                               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fa fa-google-plus gp-tooltip"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="divider" />
+                        <div class="text-center hidden-sm hidden-xs">
+                            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <!-- Tamal -->
+                            <div style="text-align: center">
+                                <ins class="adsbygoogle"
+                                     style="display:inline-block;width:728px;height:90px"
+                                     data-ad-client="ca-pub-7312968410890852"
+                                     data-ad-slot="2217745225"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
                         </div>
                     </article>
                     {{/post}}
-                    <div style="text-align: center" class="hidden-sm hidden-xs">
-                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                        <!-- Tamal -->
-                        <div style="text-align: center">
-                            <ins class="adsbygoogle"
-                                 style="display:inline-block;width:728px;height:90px"
-                                 data-ad-client="ca-pub-7312968410890852"
-                                 data-ad-slot="2217745225"></ins>
-                            <script>
-                                (adsbygoogle = window.adsbygoogle || []).push({});
-                            </script>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
