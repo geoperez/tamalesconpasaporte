@@ -20,11 +20,11 @@
   },"data":data})))
     + "\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"post-content\">\r\n                        <div class=\"post-image\" style=\"background-image: url("
     + escapeExpression(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"image","hash":{},"data":data}) : helper)))
-    + ");\">&nbsp;</div>\r\n                        <p>\r\n                            "
+    + ");\">&nbsp;</div>\r\n                        <p>"
     + escapeExpression(((helpers.excerpt || (depth0 && depth0.excerpt) || helperMissing).call(depth0, {"name":"excerpt","hash":{
     'words': ("120")
   },"data":data})))
-    + "...\r\n                        </p>\r\n                        <a href=\""
+    + "...</p>\r\n                        <a href=\""
     + escapeExpression(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"url","hash":{},"data":data}) : helper)))
     + "\" class=\"btn btn-success\">Continuar leyendo</a>\r\n                    </div>\r\n                    <hr />\r\n                    <div class=\"post-meta\">\r\n                        Fecha: "
     + escapeExpression(((helpers.date || (depth0 && depth0.date) || helperMissing).call(depth0, {"name":"date","hash":{
