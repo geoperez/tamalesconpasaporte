@@ -1,0 +1,71 @@
+{{!< default}}
+{{> header}}
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<div id="fb-root"></div>
+<script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/es_MX/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="header-wrap">
+    <div id="instafeed"></div>
+    <header class="container header">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="logo-text">
+                    <h1>{{@blog.title}}</h1>
+                    <h2 class="hidden-xs hidden-sm">{{@blog.description}}</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+<div class="content-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 posts">
+                <article class="post">
+                    <div class="post-header">
+                        <div class="post-title">
+                            <h1>Error<small>La p&aacute;gina que buscas no existe</small></h1>
+                            </div>
+                        </div>
+                            <p>Pero no te preocupes, tenemos mucho contenido que te podr&iacute;a interesar.</p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <div class="about">
+                    <div class="fb-like-box" data-href="https://www.facebook.com/Tamalesconpasaporte" data-width="280" data-height="320"
+                         data-colorscheme="light" data-show-faces="true" data-header="true"
+                         data-stream="false" data-show-border="true"></div>
+
+                    <hr class="divider">
+
+                    <div style="text-align: center" class="hidden-sm hidden-xs">
+                        <!-- Tamalbox -->
+                        <ins class="adsbygoogle"
+                             style="display:inline-block;width:290px;height:600px"
+                             data-ad-client="ca-pub-7312968410890852"
+                             data-ad-slot="1025056821"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+
+                    <hr class="divider" />
+
+                    {{> mailchimp}}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{{> footer}}
