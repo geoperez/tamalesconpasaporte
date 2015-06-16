@@ -23,10 +23,14 @@
   },"data":data})))
     + "\"\r\n                                   onclick=\"window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;\"><i class=\"fa fa-google-plus gp-tooltip\"></i></a>\r\n                            </li>\r\n                        </ul>\r\n                    </div>\r\n                </div>\r\n                <hr class=\"divider\" />\r\n                <div class=\"text-center hidden-sm hidden-xs\">\r\n                    <script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>\r\n                    <!-- Tamal -->\r\n                    <div style=\"text-align: center\">\r\n                        <ins class=\"adsbygoogle\"\r\n                             style=\"display:inline-block;width:728px;height:90px\"\r\n                             data-ad-client=\"ca-pub-7312968410890852\"\r\n                             data-ad-slot=\"2217745225\"></ins>\r\n                        <script>\r\n                            (adsbygoogle = window.adsbygoogle || []).push({});\r\n                        </script>\r\n                    </div>\r\n                </div>\r\n            </article>\r\n";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  var stack1, helper, options, functionType="function", helperMissing=helpers.helperMissing, blockHelperMissing=helpers.blockHelperMissing, buffer = "";
+  var stack1, helper, options, lambda=this.lambda, escapeExpression=this.escapeExpression, functionType="function", helperMissing=helpers.helperMissing, blockHelperMissing=helpers.blockHelperMissing, buffer = "";
   stack1 = this.invokePartial(partials.header, '', 'header', depth0, undefined, helpers, partials, data);
   if (stack1 != null) { buffer += stack1; }
-  buffer += "\r\n<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-12 posts\">\r\n";
+  buffer += "<div class=\"header-wrap\">\r\n    <div id=\"instafeed\"></div>\r\n    <header class=\"container header\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n                <div class=\"logo-text\">\r\n                    <h1>"
+    + escapeExpression(lambda(((stack1 = (data && data.blog)) && stack1.title), depth0))
+    + "</h1>\r\n                    <h2 class=\"hidden-xs hidden-sm\">"
+    + escapeExpression(lambda(((stack1 = (data && data.blog)) && stack1.description), depth0))
+    + "</h2>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </header>\r\n</div>\r\n\r\n<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-12 posts\">\r\n";
   stack1 = ((helper = (helper = helpers.post || (depth0 != null ? depth0.post : depth0)) != null ? helper : helperMissing),(options={"name":"post","hash":{},"fn":this.program(1, data),"inverse":this.noop,"data":data}),(typeof helper === functionType ? helper.call(depth0, options) : helper));
   if (!helpers.post) { stack1 = blockHelperMissing.call(depth0, stack1, options); }
   if (stack1 != null) { buffer += stack1; }
