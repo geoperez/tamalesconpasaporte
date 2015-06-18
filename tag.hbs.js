@@ -26,7 +26,7 @@
   },"data":data})))
     + "...\r\n                    </p>\r\n                    <a href=\""
     + escapeExpression(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"url","hash":{},"data":data}) : helper)))
-    + "\" class=\"btn btn-success\">Continuar leyendo</a>\r\n                </div>\r\n\r\n                <hr />\r\n\r\n                <div class=\"post-meta\">\r\n                    Fecha: "
+    + "\" class=\"btn btn-success\">Continuar leyendo</a>\r\n                </div>\r\n                <hr />\r\n                <div class=\"post-meta\">\r\n                    Fecha: "
     + escapeExpression(((helpers.date || (depth0 && depth0.date) || helperMissing).call(depth0, {"name":"date","hash":{
     'format': ("MMM-DD-YYYY")
   },"data":data})))
@@ -49,7 +49,7 @@
     + escapeExpression(((helpers.url || (depth0 && depth0.url) || helperMissing).call(depth0, {"name":"url","hash":{
     'absolute': ("true")
   },"data":data})))
-    + "\" onclick=\"window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;\"><i class=\"fa fa-google-plus gp-tooltip\"></i></a></li>\r\n                        </ul>\r\n                    </div>\r\n                </div>\r\n\r\n                <hr class=\"divider\" />\r\n\r\n            </article>\r\n";
+    + "\" onclick=\"window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;\"><i class=\"fa fa-google-plus gp-tooltip\"></i></a></li>\r\n                        </ul>\r\n                    </div>\r\n                </div>\r\n                <hr class=\"divider\" />\r\n            </article>\r\n";
 },"2":function(depth0,helpers,partials,data) {
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
   return "                        <li><a href=\""
@@ -74,7 +74,7 @@
   buffer += "\r\n        </div>\r\n        <div class=\"col-md-4\">\r\n            <div class=\"about\">\r\n                <div class=\"fb-like-box\" data-href=\"https://www.facebook.com/Tamalesconpasaporte\" data-width=\"280\" data-height=\"320\"\r\n                     data-colorscheme=\"light\" data-show-faces=\"true\" data-header=\"true\"\r\n                     data-stream=\"false\" data-show-border=\"true\"></div>\r\n                <hr class=\"divider\">\r\n\r\n                <div style=\"text-align: center\" class=\"hidden-sm hidden-xs\">\r\n                    <!-- Tamalbox -->\r\n                    <ins class=\"adsbygoogle\"\r\n                         style=\"display:inline-block;width:290px;height:600px\"\r\n                         data-ad-client=\"ca-pub-7312968410890852\"\r\n                         data-ad-slot=\"1025056821\"></ins>\r\n                    <script>\r\n                        (adsbygoogle = window.adsbygoogle || []).push({});\r\n                    </script>\r\n                </div>\r\n\r\n                <hr class=\"divider\" />\r\n\r\n";
   stack1 = this.invokePartial(partials.mailchimp, '                ', 'mailchimp', depth0, undefined, helpers, partials, data);
   if (stack1 != null) { buffer += stack1; }
-  buffer += "            </div>\r\n        </div>\r\n\r\n    </div>\r\n</div>\r\n<div class=\"posts-pagination\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            "
+  buffer += "            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"posts-pagination\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            "
     + escapeExpression(((helper = (helper = helpers.pagination || (depth0 != null ? depth0.pagination : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"pagination","hash":{},"data":data}) : helper)))
     + "\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n";
   stack1 = this.invokePartial(partials.footer, '', 'footer', depth0, undefined, helpers, partials, data);

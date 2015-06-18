@@ -110,21 +110,7 @@
                 {{/if}}
                 <div class="author-info">
                     <h2>{{author.name}}</h2>
-                    <p class="hidden-sm hidden-xs">
-                        {{author.bio}}
-                    </p>
-                    <ul class="list-inline list-autthor-contact-info hidden-sm hidden-xs">
-                        {{#if author.website}}
-                        <li>
-                            <a href="http://{{author.website}}">
-                                <i class="fa fa-link"></i> {{author.website}}
-                            </a>
-                        </li>
-                        {{/if}}
-                        {{#if author.location}}
-                        <li><i class="fa fa-home"></i> {{author.location}}</li>
-                        {{/if}}
-                    </ul>
+                    <p class="hidden-sm hidden-xs">{{author.bio}}</p>
                 </div>
                 {{/if}}
 

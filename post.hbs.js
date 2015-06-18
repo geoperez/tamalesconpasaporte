@@ -54,7 +54,7 @@
   stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.author : depth0), {"name":"if","hash":{},"fn":this.program(8, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
   buffer += "\r\n                <hr class=\"divider\">\r\n\r\n                <h3>Etiquetas</h3>\r\n\r\n                <p>Encuentra m&aacute;s art&iacute;culos sobre:</p>\r\n\r\n                <ul class=\"list-inline list-post-tags\">\r\n";
-  stack1 = ((helpers.foreach || (depth0 && depth0.foreach) || helperMissing).call(depth0, (depth0 != null ? depth0.tags : depth0), {"name":"foreach","hash":{},"fn":this.program(15, data),"inverse":this.noop,"data":data}));
+  stack1 = ((helpers.foreach || (depth0 && depth0.foreach) || helperMissing).call(depth0, (depth0 != null ? depth0.tags : depth0), {"name":"foreach","hash":{},"fn":this.program(11, data),"inverse":this.noop,"data":data}));
   if (stack1 != null) { buffer += stack1; }
   return buffer + "                </ul>\r\n\r\n                <hr class=\"divider\">\r\n\r\n                <div style=\"text-align: center\" class=\"hidden-sm hidden-xs\">\r\n                    <script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>\r\n                    <!-- Tamalbox -->\r\n                    <ins class=\"adsbygoogle\"\r\n                         style=\"display:inline-block;width:290px;height:600px\"\r\n                         data-ad-client=\"ca-pub-7312968410890852\"\r\n                         data-ad-slot=\"1025056821\"></ins>\r\n                    <script>\r\n                        (adsbygoogle = window.adsbygoogle || []).push({});\r\n                    </script>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 },"2":function(depth0,helpers,partials,data) {
@@ -94,16 +94,11 @@
   var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression, buffer = "";
   stack1 = helpers['if'].call(depth0, ((stack1 = (depth0 != null ? depth0.author : depth0)) != null ? stack1.image : stack1), {"name":"if","hash":{},"fn":this.program(9, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
-  buffer += "                <div class=\"author-info\">\r\n                    <h2>"
+  return buffer + "                <div class=\"author-info\">\r\n                    <h2>"
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.author : depth0)) != null ? stack1.name : stack1), depth0))
-    + "</h2>\r\n                    <p class=\"hidden-sm hidden-xs\">\r\n                        "
+    + "</h2>\r\n                    <p class=\"hidden-sm hidden-xs\">"
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.author : depth0)) != null ? stack1.bio : stack1), depth0))
-    + "\r\n                    </p>\r\n                    <ul class=\"list-inline list-autthor-contact-info hidden-sm hidden-xs\">\r\n";
-  stack1 = helpers['if'].call(depth0, ((stack1 = (depth0 != null ? depth0.author : depth0)) != null ? stack1.website : stack1), {"name":"if","hash":{},"fn":this.program(11, data),"inverse":this.noop,"data":data});
-  if (stack1 != null) { buffer += stack1; }
-  stack1 = helpers['if'].call(depth0, ((stack1 = (depth0 != null ? depth0.author : depth0)) != null ? stack1.location : stack1), {"name":"if","hash":{},"fn":this.program(13, data),"inverse":this.noop,"data":data});
-  if (stack1 != null) { buffer += stack1; }
-  return buffer + "                    </ul>\r\n                </div>\r\n";
+    + "</p>\r\n                </div>\r\n";
 },"9":function(depth0,helpers,partials,data) {
   var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression;
   return "                <div class=\"author-image\" style=\"border: 0\">\r\n                    <img src=\""
@@ -114,18 +109,6 @@
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.author : depth0)) != null ? stack1.name : stack1), depth0))
     + "\" />\r\n                </div>\r\n";
 },"11":function(depth0,helpers,partials,data) {
-  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression;
-  return "                        <li>\r\n                            <a href=\"http://"
-    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.author : depth0)) != null ? stack1.website : stack1), depth0))
-    + "\">\r\n                                <i class=\"fa fa-link\"></i> "
-    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.author : depth0)) != null ? stack1.website : stack1), depth0))
-    + "\r\n                            </a>\r\n                        </li>\r\n";
-},"13":function(depth0,helpers,partials,data) {
-  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression;
-  return "                        <li><i class=\"fa fa-home\"></i> "
-    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.author : depth0)) != null ? stack1.location : stack1), depth0))
-    + "</li>\r\n";
-},"15":function(depth0,helpers,partials,data) {
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
   return "                    <li><a href=\""
     + escapeExpression(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"url","hash":{},"data":data}) : helper)))
